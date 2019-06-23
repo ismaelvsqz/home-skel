@@ -2,3 +2,5 @@
 #	name = Your Name
 #	email = your.name@mail.com
 #	signingkey = Your GPG ID
+[commit]
+	gpgsign = true
