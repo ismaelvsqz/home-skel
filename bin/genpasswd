@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+#
+# This script generates easy to remember passwords.
+# Also, excludes the characteres that can change in
+# the Spanish or English keyboards.
+
+COUNT=3
+SIZE=12
+EXCLUDE="@|¬°\"#\\¿¡¨´~[]{}^\`"
+
+apg -a 0 -n $COUNT -m $SIZE -M SNC -t -E $EXCLUDE

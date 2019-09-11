@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+#
+# This script removes the untagged docker images
+
+docker rmi $(docker images -f "dangling=true" -q)
